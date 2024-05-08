@@ -41,6 +41,29 @@ public class Middle {
 			System.out.println(s);
 		}
 		
+		String bit = "bit";
+		String com = "com";
+		String sql = "sql";
+		String intStr = "int";
+		
+		char[] charArr2 = new char[12];
+		
+		for(int i = 0; i < charArr2.length; i++) {
+			if(i % 4 == 0) {
+				charArr2[i] = bit.charAt(i / 4);
+			} else if(i % 4 == 1) {
+				charArr2[i] = com.charAt(i / 4);
+			} else if(i % 4 == 2) {
+				charArr2[i] = sql.charAt(i / 4);
+			} else {
+				charArr2[i] = intStr.charAt(i / 4);
+			}
+		}
+		
+		for(char c : charArr2) {
+			System.out.print(c + ", ");
+		}
+		
 		sc.close();
 		
 //		3. 처음에 은행에 맡긴 돈은 10000원입니다
